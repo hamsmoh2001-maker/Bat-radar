@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>الطبيعة كتبت الشيفرة: من صدى الخفاش إلى الرادار</title>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--ivory:#f6f3ea;--forest:#12301f;--maryam:#6fae8f;--mint:#cfe5d8;--silver:#a9b2ae;--ink:#1d2a22;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box}
+html{color-scheme:light;scroll-behavior:smooth}
+body{margin:0;background:var(--ivory);color:var(--ink);font:400 18px/2 Tajawal,"Segoe UI",Tahoma,sans-serif}
+h1,h2,h3{font-family:Amiri,"Traditional Arabic",serif;color:var(--forest);line-height:1.3;margin:0}
+section{position:relative;padding:clamp(56px,9vw,120px) clamp(20px,6vw,90px);overflow:hidden}
+.w{max-width:1000px;margin:auto}
+.cover{background:var(--forest);color:var(--ivory);min-height:100vh;display:flex;flex-direction:column;justify-content:space-between;padding-bottom:30px}
+.cover h1{color:var(--ivory);font-size:clamp(40px,8.5vw,112px);font-weight:700;max-width:11em;margin-top:6vh}
+.cover h1 span{display:block;font-size:.42em;color:var(--maryam);font-weight:400;margin-top:.4em}
+.cover .tag{color:var(--silver);font-size:18px;margin:0}
+.cover .who{display:flex;gap:18px;align-items:center;border-top:1px solid #ffffff30;padding-top:14px;color:var(--mint);font-size:20px}
+.hero-svg{width:100%;height:auto;display:block;margin:2vh 0}
+.k{font:700 clamp(28px,5vw,60px)/1.3 Amiri,serif;color:var(--forest)}
+.lede{font-size:21px;max-width:34em}
+.off{margin-inline-start:12%}
+.sub{color:var(--maryam);font:700 22px Amiri,serif;margin:0 0 6px}
+.dark{background:var(--forest);color:var(--ivory)}
+.dark h2,.dark .k{color:var(--ivory)}
+.grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(20px,4vw,60px);align-items:center}
+.fig{margin:0}
+.fig figcaption{font-size:15px;color:#52625a;line-height:1.7;margin-top:8px;border-inline-start:3px solid var(--maryam);padding-inline-start:10px}
+.dark .fig figcaption{color:var(--silver)}
+.seam{display:block;width:100%;height:60px;margin:0;background:var(--ivory)}
+.tl{position:relative;margin:40px 0 0;padding:0;list-style:none;border-inline-start:2px solid var(--maryam)}
+.tl li{position:relative;padding:0 28px 26px 0;padding-inline:28px 0;line-height:1.8}
+.tl li::before{content:"";position:absolute;inset-inline-start:-8px;top:10px;width:14px;height:14px;border-radius:50%;background:var(--ivory);border:3px solid var(--maryam)}
+.tl b{font:700 24px Amiri,serif;color:var(--forest);margin-inline-end:10px}
+.dark .tl b{color:var(--mint)}
+.tog{display:inline-flex;border:1px solid var(--silver);border-radius:99px;padding:4px;margin:20px 0}
+.tog button{font:500 17px Tajawal,sans-serif;border:0;background:none;padding:6px 26px;border-radius:99px;cursor:pointer;color:var(--ink)}
+.tog button[aria-pressed=true]{background:var(--forest);color:var(--ivory)}
+button:focus-visible{outline:3px solid var(--maryam);outline-offset:2px}
+.cmp{width:100%;border-collapse:collapse;font-size:17px;line-height:1.7}
+.cmp th,.cmp td{padding:10px 14px;text-align:start;border-bottom:1px solid #c9d3ce}
+.cmp th{color:var(--maryam);font-weight:700;width:26%}
+.use{display:flex;gap:0;flex-wrap:wrap;margin-top:30px;border-top:1px solid var(--silver)}
+.use div{flex:1 1 240px;padding:22px 20px 10px;border-inline-start:1px solid var(--silver)}
+.use div:first-child{border-inline-start:0;padding-inline-start:0}
+.use h3{font-size:28px}
+.note{background:var(--mint);padding:20px 26px;border-radius:2px 28px 2px 28px;margin:36px 0 0;font-size:19px}
+.quote{text-align:center;background:var(--forest);color:var(--ivory)}
+.quote .k{color:var(--ivory);max-width:20em;margin:30px auto;font-size:clamp(30px,5.6vw,68px)}
+ol.ref{font-size:16px;line-height:1.9;color:#33443b;max-width:46em}
+ol.ref li{margin-bottom:8px}
+.refw{background:var(--ivory)}
+.lab{margin:30px 0 0;padding:20px 24px;background:var(--mint);border-radius:28px 2px 28px 2px;max-width:32em}.trk{position:relative;height:40px;border-bottom:2px dashed var(--silver);margin:14px 0 8px;font-size:26px}.trk>*{position:absolute;bottom:0;font-style:normal;color:var(--forest);transition:right .25s}.btn{font:500 18px Tajawal,sans-serif;background:var(--forest);color:var(--ivory);border:0;padding:8px 30px;border-radius:99px;cursor:pointer}.btn:focus-visible{outline:3px solid var(--maryam);outline-offset:3px}
+.tl summary{cursor:pointer;list-style:none}.tl summary::-webkit-details-marker{display:none}.tl summary::after{content:" +";color:var(--maryam);font-weight:700}.tl details[open] summary::after{content:" −"}.tl summary:focus-visible{outline:3px solid var(--maryam);outline-offset:4px}.tl details p{margin:8px 0 0;font-size:16px;line-height:1.8;color:var(--silver);max-width:34em}
+#in{position:fixed;inset:0;z-index:60;background:var(--forest);color:var(--ivory);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px;clip-path:circle(150% at var(--x,50%) var(--y,50%));transition:clip-path 1.4s cubic-bezier(.7,0,.3,1)}
+#in.go{clip-path:circle(0% at var(--x,50%) var(--y,50%))}
+#in .it{font:700 clamp(36px,8vw,96px)/1.25 Amiri,serif;max-width:12em}
+#in .it span{display:block;font-size:.4em;color:var(--maryam);font-weight:400;margin-top:.3em}
+#in p{color:var(--mint);font-size:20px;margin:14px 0 26px}
+#in .inb{width:min(340px,76vw);height:auto;overflow:visible;margin-bottom:10px}
+.rg{fill:none;stroke:#6fae8f;stroke-width:2;transform-origin:200px 100px;animation:rg 3.2s ease-out infinite}
+.rg:nth-child(2){animation-delay:1s}.rg:nth-child(3){animation-delay:2s}
+@keyframes rg{from{transform:scale(1);opacity:.9}to{transform:scale(9);opacity:0}}
+body.lk{overflow:hidden}
+.sweep{transform-origin:230px 260px;animation:sw 6s linear infinite}
+@keyframes sw{to{transform:rotate(360deg)}}
+.pulse{stroke-dasharray:6 10;animation:fl 3s linear infinite}
+@keyframes fl{to{stroke-dashoffset:-64}}
+@media (max-width:760px){.grid{grid-template-columns:1fr}.off{margin-inline-start:0}body{font-size:17px}}
+@media (prefers-reduced-motion:reduce){.sweep,.pulse{animation:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body class="lk">
+<div id="in"><svg class="inb" viewBox="0 0 400 200" aria-hidden="true"><circle class="rg" cx="200" cy="100" r="20"/><circle class="rg" cx="200" cy="100" r="20"/><circle class="rg" cx="200" cy="100" r="20"/><path d="M200 95L130 60Q145 90 120 105Q150 112 140 135Q175 125 200 112Q225 125 260 135Q250 112 280 105Q255 90 270 60Z" fill="#cfe5d8"/><circle cx="200" cy="90" r="11" fill="#cfe5d8"/></svg><div class="it">الطبيعة كتبت الشيفرة<span>من صدى الخفاش إلى الرادار</span></div><p>إعداد الطالبة: همس محمد الحبيشي</p><button id="st" class="btn" style="font-size:22px;padding:12px 44px">ابدأي الرحلة</button></div>
+<div id="pg" style="position:fixed;top:0;right:0;height:4px;width:0;background:#6fae8f;z-index:9"></div>
+<svg id="fw" viewBox="0 0 800 50" preserveAspectRatio="none" style="position:fixed;left:0;right:0;bottom:0;width:100%;height:36px;pointer-events:none;z-index:8;opacity:.6;margin-bottom:env(safe-area-inset-bottom,0px)" aria-hidden="true"><path id="fwp" fill="none" stroke="#6fae8f" stroke-width="2.5" vector-effect="non-scaling-stroke"/></svg>
+
+<!-- الغلاف -->
+<section class="cover">
+<div class="w" style="max-width:1300px;margin:0">
+<p class="tag">قبل أن يصنع الإنسان الرادار</p>
+<h1>الطبيعة كتبت الشيفرة<span>من صدى الخفاش إلى الرادار</span></h1>
+</div>
+<svg id="hero" class="hero-svg" style="cursor:crosshair;touch-action:manipulation" viewBox="0 0 1300 520" role="img" aria-label="جناح خفاش تتحول خطوطه إلى موجات ثم إلى شبكة رادار">
+<defs><radialGradient id="g" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#6fae8f" stop-opacity=".55"/><stop offset="1" stop-color="#6fae8f" stop-opacity="0"/></radialGradient></defs>
+<!-- الرادار -->
+<g fill="none" stroke="#a9b2ae" stroke-width="1" opacity=".75">
+<circle cx="230" cy="260" r="60"/><circle cx="230" cy="260" r="120"/><circle cx="230" cy="260" r="180"/><circle cx="230" cy="260" r="240"/>
+<path d="M230 20V500M-10 260H470M60 90L400 430M400 90L60 430" stroke-dasharray="3 7"/></g>
+<path class="sweep" d="M230 260 L230 20 A240 240 0 0 1 400 90Z" fill="url(#g)"/>
+<circle cx="300" cy="170" r="5" fill="#cfe5d8"/><circle cx="150" cy="330" r="4" fill="#cfe5d8"/>
+<!-- الموجات -->
+<g fill="none" stroke="#6fae8f" stroke-width="2" class="pulse">
+<path d="M940 150A80 80 0 0 0 940 310" opacity=".95"/><path d="M940 110A120 120 0 0 0 940 350" opacity=".8"/>
+<path d="M940 70A160 160 0 0 0 940 390" opacity=".65"/><path d="M940 30A200 200 0 0 0 940 430" opacity=".5"/>
+<path d="M940 -10A240 240 0 0 0 940 470" opacity=".38"/><path d="M940 -50A280 280 0 0 0 940 510" opacity=".25"/></g>
+<!-- جناح الخفاش -->
+<g stroke="#cfe5d8" stroke-width="2" fill="#6fae8f" fill-opacity=".14" stroke-linejoin="round">
+<path d="M1000 225 L790 110 Q835 190 770 235 Q815 275 780 345 Q830 340 865 405 Q930 330 1000 255Z"/>
+<path d="M1000 225 L1210 110 Q1165 190 1230 235 Q1185 275 1220 345 Q1170 340 1135 405 Q1070 330 1000 255Z"/></g>
+<g stroke="#a9b2ae" stroke-width="1.4" fill="none"><path d="M1000 225L790 110M1000 235L770 235M1000 245L780 345M1000 252L865 405M1000 225L1210 110M1000 235L1230 235M1000 245L1220 345M1000 252L1135 405"/></g>
+<ellipse cx="1000" cy="250" rx="26" ry="50" fill="#0b1f14" stroke="#cfe5d8"/>
+<circle cx="1000" cy="198" r="22" fill="#0b1f14" stroke="#cfe5d8"/>
+<path d="M986 183L978 150L996 176M1014 183L1022 150L1004 176" fill="#0b1f14" stroke="#cfe5d8"/>
+</svg>
+<p class="tag" style="margin:0 0 10px">المسي أي مكان في الصورة لتُرسلي نبضة صدى</p><div class="who"><span>إعداد الطالبة: همس محمد الحبيشي</span></div>
+</section>
+
+<!-- الفصل الأول -->
+<section>
+<div class="w">
+<p class="sub">الفصل الأول</p>
+<h2 class="k">معجزة تحدث في الظلام</h2>
+<div class="grid" style="margin-top:36px">
+<div>
+<p class="lede">كثير من الخفافيش تطير ليلًا وتصطاد في ظلام شبه تام. وهي لا تعتمد على الرؤية وحدها، بل تستخدم <b>تحديد الموقع بالصدى</b>: تُصدر أصواتًا عالية التردد، معظمها فوق سمع الإنسان، ثم تصغي إلى ما يرتد إليها من الأشياء.</p>
+<p>حين تصطدم النبضة الصوتية بحشرة أو غصن، يرتد جزء منها إلى أذني الخفاش. من الزمن بين الإصدار والعودة يقدّر دماغه المسافة، ومن الفرق بين وصول الصدى إلى الأذنين يعرف الاتجاه. وعند الاقتراب من الفريسة تزيد كثير من الأنواع عدد النبضات في الثانية لتتابع حركتها بدقة أكبر.</p>
+</div>
+<figure class="fig">
+<svg viewBox="0 0 420 300" role="img" aria-label="رسم يوضح خروج الصوت من الخفاش وارتداده من حشرة">
+<g fill="none" stroke-width="2">
+<path class="pulse" stroke="#12301f" d="M330 150A40 40 0 0 0 330 190M330 120A70 70 0 0 0 330 220M330 90A100 100 0 0 0 330 250" transform="translate(0,-20)"/>
+<path class="pulse" stroke="#6fae8f" d="M100 70A30 30 0 0 1 100 130M135 50A60 60 0 0 1 135 150M170 30A90 90 0 0 1 170 170" transform="translate(0,60) scale(1,1)" style="animation-direction:reverse"/></g>
+<ellipse cx="60" cy="150" rx="12" ry="7" fill="#12301f"/><path d="M52 146L40 132M68 146L80 132" stroke="#12301f" stroke-width="2"/>
+<path d="M360 150q-18-34-40-16q16 6 18 16q-2 10-18 16q22 18 40-16z" fill="#12301f"/><circle cx="366" cy="148" r="9" fill="#12301f"/>
+<text x="60" y="190" font-size="14" text-anchor="middle" fill="#12301f" font-family="Tajawal">حشرة</text>
+<text x="350" y="190" font-size="14" text-anchor="middle" fill="#12301f" font-family="Tajawal">خفاش</text>
+<text x="210" y="30" font-size="14" text-anchor="middle" fill="#12301f" font-family="Tajawal">① نبضة صادرة</text>
+<text x="210" y="285" font-size="14" text-anchor="middle" fill="#3f8a67" font-family="Tajawal">② صدى عائد</text>
+</svg>
+<figcaption>رسم توضيحي مبسّط: الخط الداكن هو النبضة الصادرة، والأخضر هو الصدى العائد. الحركة تعبّر عن الاتجاه فقط، لا عن السرعة الفعلية.</figcaption>
+</figure>
+</div>
+<div class="lab"><label for="sl">ابعدي الحشرة عن الخفاش: <b id="dv">2</b> م</label><input id="sl" type="range" min="0.5" max="10" step="0.5" value="2" style="width:100%;accent-color:#3f8a67"><div class="trk"><i id="ins">●</i><span style="right:0">🦇</span></div><p style="margin:0">يعود الصدى بعد <b id="ms">11.7</b> ميلي ثانية تقريبًا، بسرعة صوت 343 م/ث. كلما ابتعدت الحشرة تأخر الصدى.</p></div>
+<p class="off" style="max-width:32em;margin-top:30px">أول من أثبت أن الخفافيش تتجنب العوائق دون الاعتماد على البصر هو لازارو سبالانزاني في القرن الثامن عشر. وفي أواخر ثلاثينيات القرن العشرين، سجّل دونالد غريفين وروبرت غالامبوس الأصوات فوق الصوتية للخفافيش، وأطلق غريفين لاحقًا مصطلح «تحديد الموقع بالصدى».</p>
+</div>
+</section>
+
+<!-- الفصل الثاني -->
+<section class="dark">
+<div class="w">
+<p class="sub">الفصل الثاني</p>
+<h2 class="k">حين دخلت الموجات عالم التكنولوجيا</h2>
+<div class="grid" style="margin-top:36px">
+<figure class="fig">
+<svg viewBox="0 0 420 300" role="img" aria-label="رسم لهوائي رادار قديم على برج شبكي">
+<g fill="none" stroke="#cfe5d8" stroke-width="2">
+<path d="M170 290L190 80M250 290L230 80M178 230H242M184 170H236M188 120H232M172 290L240 180M248 290L180 180M190 80L230 80"/>
+<path d="M120 40H300M120 70H300M120 100H300M120 40V100M300 40V100M160 40V100M210 40V100M260 40V100" stroke="#a9b2ae"/></g>
+<path d="M50 290H370" stroke="#6fae8f" stroke-width="2"/>
+</svg>
+<figcaption>رسم لهوائي من طراز محطات «تشين هوم» البريطانية: برج شبكي يحمل شبكة من الأسلاك. (الصور التاريخية الأصلية متاحة في المراجع.)</figcaption>
+</figure>
+<div>
+<p class="lede">لم يبدأ الرادار من الخفاش، بل من فيزياء الموجات الكهرومغناطيسية. ففي ستينيات القرن التاسع عشر تنبأ ماكسويل بوجودها، وفي 1887 أنتجها هيرتز في المختبر وبيّن أنها تنعكس عن الأجسام.</p>
+<p>وفي الثلاثينيات، قاد روبرت واتسون وات في بريطانيا فريقًا حوّل هذه المعرفة إلى نظام عملي لكشف الطائرات من بعيد، فكانت شبكة «تشين هوم» على سواحل بريطانيا.</p>
+</div>
+</div>
+<ul class="tl">
+<li><details><summary><b>1887</b>هيرتز يبرهن على وجود الموجات الراديوية وانعكاسها.</summary><p>أنتج هاينريش هيرتز هذه الموجات في المختبر، وأظهر أنها تنعكس عن الأسطح المعدنية، وهي الخاصية التي يقوم عليها الرادار.</p></details></li>
+<li><details><summary><b>1904</b>كريستيان هولسماير يسجّل براءة جهاز يكشف السفن بالموجات الراديوية.</summary><p>صُمّم الجهاز لتنبيه السفن إلى بعضها في الضباب لتفادي التصادم، وهو من أوائل الأفكار العملية القريبة من الرادار.</p></details></li>
+<li><details><summary><b>1935</b>تجربة داينتري: كشف طائرة بالموجات الراديوية بإشراف واتسون وات، ثم بدء بناء محطات الإنذار.</summary><p>استُخدم في التجربة مرسل إذاعي قرب داينتري، ورُصدت طائرة قاذفة حين مرّت عبر الحزمة. وشارك أرنولد ويلكنز في الحسابات التي سبقتها.</p></details></li>
+<li><details><summary><b>1940</b>البحرية الأمريكية تبتكر كلمة «رادار» (RADAR) اختصارًا لوصف الفكرة.</summary><p>الكلمة اختصار للعبارة الإنجليزية Radio Detection And Ranging، أي الكشف عن الأجسام وتحديد بُعدها بالموجات الراديوية.</p></details></li>
+</ul>
+</div>
+</section>
+
+<!-- الفصل الثالث -->
+<section>
+<div class="w">
+<p class="sub">الفصل الثالث</p>
+<h2 class="k">الفكرة متشابهة، لكن الوسيلة مختلفة</h2>
+<p class="lede" style="margin-top:20px">كلاهما يرسل إشارة ويصغي إلى ما يرتد. اختر الطرف لترى كيف تتغير الوسيلة وتبقى القاعدة.</p>
+<div class="tog" role="group" aria-label="اختيار الجهاز">
+<button id="b1" aria-pressed="true">الخفاش</button><button id="b2" aria-pressed="false">الرادار</button></div>
+<svg viewBox="0 0 800 120" style="width:100%;height:auto" aria-hidden="true">
+<line x1="40" y1="60" x2="760" y2="60" stroke="#c9d3ce"/>
+<path id="wv" fill="none" stroke="#3f8a67" stroke-width="3" class="pulse" d=""/>
+<circle cx="740" cy="60" r="14" fill="#12301f"/><text x="740" y="100" font-size="14" text-anchor="middle" fill="#12301f" font-family="Tajawal">هدف</text>
+<circle cx="60" cy="60" r="14" fill="#6fae8f"/><text id="src" x="60" y="100" font-size="14" text-anchor="middle" fill="#12301f" font-family="Tajawal">خفاش</text>
+</svg>
+<table class="cmp">
+<tr><th></th><th id="h">الخفاش</th></tr>
+<tr><th>نوع الموجة</th><td id="c1"></td></tr>
+<tr><th>السرعة</th><td id="c2"></td></tr>
+<tr><th>المستقبِل</th><td id="c3"></td></tr>
+</table>
+<div class="grid" style="margin:50px 0 10px"><svg id="sc" viewBox="0 0 300 300" style="width:100%;max-width:380px;margin:auto;display:block;background:#0e2619;border-radius:50%" role="img" aria-label="شاشة رادار تفاعلية"><g fill="none" stroke="#6fae8f" stroke-opacity=".5"><circle cx="150" cy="150" r="50"/><circle cx="150" cy="150" r="100"/><circle cx="150" cy="150" r="145"/><path d="M150 5V295M5 150H295" stroke-dasharray="3 6"/></g><g id="tg"></g></svg><div><h3 style="font-size:32px">جرّبي الرادار بنفسك</h3><p>في الشاشة أهداف مخفية في أماكن عشوائية. أرسلي نبضة وراقبي: كلما تأخر الصدى، كان الهدف أبعد.</p><button id="go" class="btn">أرسلي نبضة</button><p id="out" aria-live="polite" style="font-size:16px;line-height:1.8">لم تُرسل أي نبضة بعد. (المدى تجريبي: 100 كم)</p></div></div>
+<p class="note">القاعدة المشتركة: <b>المسافة = السرعة × زمن الذهاب والعودة ÷ 2</b>. واتجاه الصدى وتغيّر تردده يكشفان الاتجاه والحركة.</p>
+</div>
+</section>
+
+<!-- الفصل الرابع -->
+<section class="dark">
+<div class="w">
+<p class="sub">الفصل الرابع</p>
+<h2 class="k">من الطبيعة إلى المستقبل</h2>
+<div class="use">
+<div><h3>الطيران</h3><p>مراقبة الحركة الجوية وتوجيه الطائرات في المطارات.</p></div>
+<div><h3>الأرصاد الجوية</h3><p>رصد الأمطار والعواصف وحركتها، بما في ذلك رادار دوبلر.</p></div>
+<div><h3>السفن</h3><p>تجنب الاصطدام والملاحة في الضباب والظلام.</p></div>
+</div>
+<p style="margin-top:30px;max-width:36em">ويهتم المهندسون اليوم بدراسة قدرات الحيوانات في الإحساس بالبيئة، ومنها الخفافيش والدلافين، لتطوير أنظمة استشعار وتحديد مواقع أكثر كفاءة، وهو مجال يُعرف بالتقنيات المستوحاة من الطبيعة.</p>
+<p class="note" style="color:var(--ink)"><b>توضيح علمي مهم:</b> الخفاش يشبه الرادار في المبدأ العام، وهو إرسال إشارة واستقبال صداها. لكن الرادار تطور من دراسة الموجات الراديوية وحاجات الكشف عن الطائرات، وليس هناك دليل موثوق على أن الخفاش كان السبب المباشر لاختراعه.</p>
+</div>
+</section>
+
+<!-- الخاتمة -->
+<section class="quote">
+<p class="sub" style="color:var(--maryam)">الخاتمة</p>
+<h2 style="color:var(--mint);font-size:clamp(26px,4vw,44px)">الطبيعة أقدم مختبر</h2>
+<p class="k">«أحيانًا، لا نحتاج إلى اختراع فكرة جديدة بقدر ما نحتاج إلى فهم فكرة موجودة في الطبيعة.»</p>
+</section>
+
+<!-- المراجع -->
+<section class="refw">
+<div class="w">
+<h2 style="font-size:36px;margin-bottom:16px">المراجع</h2>
+<ol class="ref">
+<li>Griffin, D. R. (1958). <i>Listening in the Dark: The Acoustic Orientation of Bats and Men</i>. Yale University Press.</li>
+<li>Fenton, M. B. &amp; Simmons, N. B. (2015). <i>Bats: A World of Science and Mystery</i>. University of Chicago Press.</li>
+<li>Watson-Watt, R. (1957). <i>Three Steps to Victory</i>. Odhams Press.</li>
+<li>Britannica. مادة «Radar» ومادة «Echolocation».</li>
+<li>Skolnik, M. I. (2008). <i>Radar Handbook</i> (3rd ed.). McGraw-Hill.</li>
+<li>National Weather Service (NOAA). صفحات التعريف بالرادار الجوي (Weather Radar).</li>
+</ol>
+
+</div>
+</section>
+
+<script>
+(function(){
+var D={b:{n:"الخفاش",w:"موجات صوتية عالية التردد (غالبًا فوق صوتية)",s:"نحو 343 م/ث في الهواء",r:"الأذنان والدماغ",a:14,l:34},
+r:{n:"الرادار",w:"موجات كهرومغناطيسية، منها الموجات الراديوية",s:"سرعة الضوء، نحو 300 ألف كم/ث",r:"هوائي وجهاز استقبال",a:6,l:12}};
+function p(a,l){var d="M40 60";for(var x=40;x<=740;x+=4){d+=" L"+x+" "+(60+a*Math.sin((x-40)/l))}return d}
+function set(k){var o=D[k];
+h.textContent=o.n;src.textContent=o.n;c1.textContent=o.w;c2.textContent=o.s;c3.textContent=o.r;
+wv.setAttribute("d",p(o.a,o.l/ (2*Math.PI)*6.28/ (Math.PI)));
+b1.setAttribute("aria-pressed",k=="b");b2.setAttribute("aria-pressed",k=="r")}
+b1.onclick=function(){set("b")};b2.onclick=function(){set("r")};set("b");
+})();
+(function(){
+var NS="http://www.w3.org/2000/svg",run=0;
+function ping(svg,x,y,delay,col,max){var c=document.createElementNS(NS,"circle");c.setAttribute("cx",x);c.setAttribute("cy",y);c.setAttribute("fill","none");c.setAttribute("stroke",col);c.setAttribute("stroke-width","2");svg.appendChild(c);var t0=null;
+function f(t){if(t0===null)t0=t+delay;var k=(t-t0)/1800;if(k<0){requestAnimationFrame(f);return}if(k>=1){c.remove();return}c.setAttribute("r",k*max);c.setAttribute("opacity",1-k);requestAnimationFrame(f)}requestAnimationFrame(f)}
+var hero=document.getElementById("hero");
+hero.addEventListener("pointerdown",function(e){var r=hero.getBoundingClientRect(),x=(e.clientX-r.left)/r.width*1300,y=(e.clientY-r.top)/r.height*520;for(var i=0;i<3;i++)ping(hero,x,y,i*200,"#cfe5d8",420)});
+var pg=document.getElementById("pg");addEventListener("scroll",function(){var h=document.documentElement;pg.style.width=(scrollY/Math.max(1,h.scrollHeight-innerHeight)*100)+"%";wv2()});var fp=document.getElementById("fwp");function wv2(){var s=scrollY,d="M0 25";for(var x=0;x<=800;x+=8){d+=" L"+x+" "+(25+9*Math.sin(x/22+s/60))}fp.setAttribute("d",d)}wv2();
+var sl=document.getElementById("sl");function up(){var v=+sl.value;dv.textContent=v;ms.textContent=(2*v/343*1000).toFixed(1);ins.style.right=(v/10*88)+"%"}sl.oninput=up;up();
+var st=document.getElementById("st"),inn=document.getElementById("in");st.onclick=function(){var r=st.getBoundingClientRect();inn.style.setProperty("--x",(r.left+r.width/2)+"px");inn.style.setProperty("--y",(r.top+r.height/2)+"px");inn.classList.add("go");document.body.classList.remove("lk");scrollTo(0,0);setTimeout(function(){inn.remove()},1500)};
+var tg=document.getElementById("tg"),out=document.getElementById("out");
+document.getElementById("go").onclick=function(){var id=++run;tg.innerHTML="";out.textContent="النبضة تنطلق…";
+var T=[];for(var i=0;i<4;i++){var a=Math.random()*6.283,r=25+Math.random()*115;T.push({r:r,x:150+r*Math.cos(a),y:150+r*Math.sin(a),h:null,c:null})}
+var ring=document.createElementNS(NS,"circle");ring.setAttribute("cx",150);ring.setAttribute("cy",150);ring.setAttribute("fill","none");ring.setAttribute("stroke","#cfe5d8");ring.setAttribute("stroke-width","2");tg.appendChild(ring);
+var t0=null,lines=[];
+function f(t){if(id!==run)return;if(t0===null)t0=t;var k=Math.min((t-t0)/2400,1),R=k*145;ring.setAttribute("r",R);ring.setAttribute("opacity",1-k*.7);
+T.forEach(function(o){if(o.h===null&&o.r<=R){o.h=t;var c=document.createElementNS(NS,"circle");c.setAttribute("cx",o.x);c.setAttribute("cy",o.y);c.setAttribute("r",6);c.setAttribute("fill","#9fe0bd");tg.appendChild(c);o.c=c;var d=Math.round(o.r/145*100);lines.push("هدف على بعد "+d+" كم، والصدى يعود بعد "+(d*6.67).toFixed(0)+" ميكروثانية")}
+if(o.c)o.c.setAttribute("opacity",Math.max(0,1-(t-o.h)/5000))});
+out.innerHTML=lines.join("<br>")||"النبضة تنطلق…";
+if(t-t0<7400)requestAnimationFrame(f)}
+requestAnimationFrame(f)};
+})();
+</script>
+</body>
+</html>
